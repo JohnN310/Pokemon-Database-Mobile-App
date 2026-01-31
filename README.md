@@ -43,10 +43,10 @@ A sleek, high-performance Pokémon encyclopedia built with **React Native**, **E
 ## 📂 Project Structure
 
 app/
-  ├── _layout.tsx         # Global navigation stack and modal presentation
-  ├── index.tsx           # Home screen with searchable, paginated Pokémon list
-  ├── details.tsx         # Pokémon detail screen with animated stats and gradients
-  ├── FavoriteScreen.tsx  # View for managing and displaying favorite Pokémon
+- ├── _layout.tsx         # Global navigation stack and modal presentation
+- ├── index.tsx           # Home screen with searchable, paginated Pokémon list
+- ├── details.tsx         # Pokémon detail screen with animated stats and gradients
+- ├── FavoriteScreen.tsx  # View for managing and displaying favorite Pokémon
 
 ---
 
