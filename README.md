@@ -1,50 +1,69 @@
-# Welcome to your Expo app 👋
+# PokéDex Expo App 🧩⚡
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A sleek, high-performance Pokémon encyclopedia built with **React Native**, **Expo**, and **Expo Router**. This app leverages the **PokeAPI** to deliver real-time data on over **1,000 Pokémon**, featuring smooth animations, type-based filtering, and a persistent favorites system.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Features
 
-   ```bash
-   npm install
-   ```
+### 🔍 Dynamic PokéDex
+- Browse a comprehensive list of Pokémon
+- Lazy-loading (pagination) for smooth scrolling and performance
 
-2. Start the app
+### 🧠 Advanced Filtering
+- **Search:** Real-time name-based Pokémon search
+- **Type Filter:** Custom dropdown menu to filter Pokémon by elemental type
+- **Quick-Type Access:** Tap any type badge on a Pokémon card to instantly filter the list by that type
 
-   ```bash
-   npx expo start
-   ```
+### 🎨 Animated Details View
+- Staggered animations for base stats (HP, Attack, Defense, etc.)
+- Dynamic background gradients matching the Pokémon’s primary type
 
-In the output, you'll find options to open the app in a
+### ⭐ Favorites System
+- Save favorite Pokémon using **AsyncStorage**
+- Favorites persist even after restarting the app
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 🧩 Interactive UI
+- Floating action buttons
+- Custom spring animations on touch
+- Hidden search bar that collapses on scroll to maximize screen space
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🛠️ Tech Stack
 
-When you're ready, run:
+- **Framework:** Expo (React Native)
+- **Navigation:** Expo Router (file-based routing)
+- **Styling:** React Native `StyleSheet` with `expo-linear-gradient`
+- **Storage:** `@react-native-async-storage/async-storage`
+- **Data Source:** PokeAPI
 
-```bash
-npm run reset-project
-```
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📂 Project Structure
 
-## Learn more
+app/
+├── _layout.tsx         # Global navigation stack and modal presentation
+├── index.tsx           # Home screen with searchable, paginated Pokémon list
+├── details.tsx         # Pokémon detail screen with animated stats and gradients
+├── FavoriteScreen.tsx  # View for managing and displaying favorite Pokémon
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## ⚙️ Installation & Setup
 
-## Join the community
+### 1️⃣ Clone the Repository
+- git clone <repository-url>
+- cd pokedex-expo-app
 
-Join our community of developers creating universal apps.
+### 2️⃣ Install Dependencies
+- npm install
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 3️⃣ Start the Development Server
+- npx expo start
+
+### 4️⃣ Run on a Device
+- Mobile: Scan the QR code with the Expo Go app (iOS / Android)
+- Android Emulator: Press a
+- iOS Simulator: Press i
+
