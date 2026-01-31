@@ -57,7 +57,7 @@ export default function Index() {
   return (
     <>
       <Stack.Screen options={{ title: params.name as string }} />
-
+      {/* @ts-ignore */}
       <LinearGradient colors={gradientColors} style={{ flex: 1 }}>
         <ScrollView contentContainerStyle={styles.container}>
           {!pokemon ? (
@@ -281,5 +281,6 @@ const styles = StyleSheet.create({
     height: "100%",
     backgroundColor: "#4F46E5",
     borderRadius: 6,
+
   },
 });
